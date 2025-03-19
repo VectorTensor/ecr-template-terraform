@@ -49,7 +49,3 @@ output "ecs_cluster_name" {
 }
 
 
-output "ecs_task_public_ip" {
-  value       = aws_ecs_service.stage_service.network_configuration[0].assign_public_ip
-  description = "The public IP of the ECS task."
-}
